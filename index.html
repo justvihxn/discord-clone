@@ -30,14 +30,17 @@
     background-color: var(--bg-darkest);
   }
 
-  body{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
-  background:#1e1f22;
-  overflow:hidden;
-  }
+  body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 20% 30%, #392080, transparent 35%),
+    radial-gradient(circle at 80% 70%, #24205f, transparent 40%),
+    #18065c;
+}
 
   .bg-shape{
     position:fixed;
@@ -50,16 +53,16 @@
   .bg-shape.s2{ width:80px; height:80px; bottom:14%; right:16%; background:#5865f2; opacity:0.12; }
   .bg-shape.s3{ width:50px; height:50px; top:20%; right:22%; background:#fff; opacity:0.05; }
 
-  .modal{
-    position:relative;
-    z-index:2;
-    background-color: var(--bg-modal);
-    border-radius:8px;
-    width:480px;
-    max-width:90vw;
-    padding:32px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
-  }
+.modal {
+  width: 760px;
+  max-width: 92vw;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 40px;
+  background: #313338;
+  border-radius: 8px;
+}
 
   .modal-header{
     text-align:center;
